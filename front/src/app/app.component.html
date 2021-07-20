@@ -1,0 +1,51 @@
+<div class="wrapper-content">
+
+
+
+<div class="wrapper-forms">
+    <div class="box-inputs">
+        <div class="search">
+          <div id="geocoder" #asGeoCoder class="geocoder"> 
+          </div>
+          
+        </div>
+        <div class="spaces">
+
+       
+        <div (click)="changeMode('start')" [ngClass]="{'active-way':modeInput ==='start'}" class="start">
+          <div class="mock-label">Inicio</div>
+          <div class="mock-input">RUTA</div>
+        </div>
+
+        <div (click)="changeMode('end')" [ngClass]="{'active-way':modeInput ==='end'}" class="end">
+          <div class="mock-label">Final</div>
+          <div class="mock-input">RUTA</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="button-wrapper">
+      <button (click)= "drawRoute()" class="button"> Dibujar Ruta</button>
+    </div>
+
+</div>
+
+<div class="wrapper">
+  <div id="map" #asMap class="map-container">
+    
+  </div>
+</div>
+
+</div>
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("start");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>

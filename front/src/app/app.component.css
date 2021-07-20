@@ -1,0 +1,105 @@
+.wrapper-content{
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.wrapper-forms{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-inputs{
+    height: 80%;
+    width: 75%;
+    border: 2px solid blue;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius:25px ;
+    box-shadow: 10px 5px 75px black;
+
+}
+
+.search{
+    height: 25%;
+    width: 100%;
+    background: rgba(0, 0, 255, 0.041);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spaces{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.start{
+    border-bottom: 1px solid rgba(0, 0, 255, 0.644);
+    border-top: 1px solid rgba(0, 0, 255, 0.644);
+}
+.start:hover{
+    border:2px solid green ;
+}
+.end{
+    border-bottom: 1px solid rgba(0, 0, 255, 0.644);
+    border-top: 1px solid rgba(0, 0, 255, 0.644);
+}
+
+.end:hover{
+    border:2px solid green ;
+}
+.mock-label{
+    background-color: rgba(0, 0, 255, 0.048);
+    font-size: 16px;
+}
+.mock-input{
+    background-color: rgba(0, 0, 255, 0.082);
+    font-size: 16px;
+}
+
+.button-wrapper{
+    width: 150px;
+    height: 60px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    
+}
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 5px;
+    border:.5px solid  rgba(0, 0, 255, 0.287);
+    outline: none;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background-color: rgba(156, 156, 200, 0.993);
+}
+.wrapper{
+    width: 50vw;
+    height: 60vh;
+    border-radius: 30px;
+    border: 1px solid blue;
+    box-shadow: 10px 10px 100px black;
+}
+
+.map-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+
