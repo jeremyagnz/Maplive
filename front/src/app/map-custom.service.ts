@@ -16,7 +16,8 @@ export class MapCustomService {
   style = 'mapbox://styles/mapbox/streets-v11';
   lat = 18.480138;
   lng = -69.993890;
-  zoom = 3;
+  zoom = 5;
+  wayPoint:Array<any> = [];
 
   constructor(private httpClient: HttpClient) {
     this.mapbox.accessToken = environment.mapPk;
@@ -100,8 +101,11 @@ export class MapCustomService {
         }
       });
 
-    
+      this.wayPoint = route;
+      this.map.fitBounds([route[0], route[route.lenght - 1]], {
+        padding: 100,
 
+      });
     });
      
     

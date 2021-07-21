@@ -14,12 +14,12 @@
        
         <div (click)="changeMode('start')" [ngClass]="{'active-way':modeInput ==='start'}" class="start">
           <div class="mock-label">Inicio</div>
-          <div class="mock-input">RUTA</div>
+          <div class="mock-input">{{wayPoints?.start?.place_name}}</div>
         </div>
 
         <div (click)="changeMode('end')" [ngClass]="{'active-way':modeInput ==='end'}" class="end">
           <div class="mock-label">Final</div>
-          <div class="mock-input">RUTA</div>
+          <div class="mock-input">{{wayPoints?.end?.place_name}}</div>
         </div>
       </div>
 
